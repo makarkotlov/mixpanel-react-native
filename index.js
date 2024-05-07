@@ -1,5 +1,7 @@
 "use strict";
 
+import 'react-native-get-random-values'
+
 import {Platform, NativeModules} from "react-native";
 import packageJson from "./package.json";
 const {MixpanelReactNative} = NativeModules;
