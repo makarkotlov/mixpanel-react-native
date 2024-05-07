@@ -13,12 +13,6 @@ jest.mock("uuid", () => ({
   v4: jest.fn(),
 }));
 
-jest.mock("@react-native-async-storage/async-storage", () => ({
-  getItem: jest.fn().mockResolvedValue(null),
-  setItem: jest.fn().mockResolvedValue(undefined),
-  removeItem: jest.fn().mockResolvedValue(undefined),
-}));
-
 jest.doMock("react-native", () => {
   // Extend ReactNative
   return Object.setPrototypeOf(
